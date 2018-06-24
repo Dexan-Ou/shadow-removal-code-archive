@@ -1,3 +1,49 @@
+forked from Maciej Gryka's work.
+# A simple instruction about how to run this code
+I found this paper "[Learning to Remove Soft Shadows](http://visual.cs.ucl.ac.uk/pubs/softshadows/)" during my Computer-Graph class. And I decide to run this demo code to see what it can do. But just as Maciej Gryka said:
+
+> Consequently, it will take quite a bit of work to get things to run, from fixing all the hard-coded paths to compiling the C++ code to generating the training data and figuring out the correct place to put it.
+
+Okay, I finally make it. It is a bit plainful to make this code work, so I decide to write a simple instruction. Maybe it could give you some help.
+
+## Generate trainning materials
+
+You need to clone this repository [`shadow_gen`](https://github.com/maciejgryka/shadow-gen) to generate shadowed-unshadowed image pairs as trainning materials.
+Then you will need these things to make it work:
+
+### Requirement
+
+* Autodesk Maya 2013+
+* NVidia Mental Ray for Maya
+
+### Instruction
+
+* Install `Maya`(you can get a student pack if you are still student) and `Mental Ray Plugin`/`Mental Ray for Maya`. Besides, you do not need to install `pyMEL` as it is built-in since `Maya 2013`.
+* Start `Maya`, 
+* Create a empty scene, 
+* Load the `Mental Ray Plugin`(`Mayatomr.mll`), 
+* Open the `Render Settings`, change render to `mental ray` and change the output format to `PNG`. Then create `Physical Sun and Sky`.
+* Delete the `sunShape` as we only need `physical sky`.
+* Save the scene as `shadow-gen-master\base_white.mb`.
+* Open the `Script Editor`(I am not using the English version, so it might be incorrect), change to `python` mode, load `shadow-gen-master\create_scene.py`.
+* Change the `__FILE__` to absolutely path of `create_scene.py`, as we will run the code from editor(so there has no `__FILE__`). You might want to change the `n_images`, as it control the size of outputs.
+* Run the code.
+
+## Compiling the `PenumbraRemoval`
+
+This part is the key of the whole work. It is a bit plainful to configure the environment. So, be patient.
+
+### Requirement
+
+* [OpenCV](https://opencv.org/) 2.4.1 *(seem some bugs in 2.3.1)*
+* [Eigen](http://eigen.tuxfamily.org)
+* [TRW-S v1.3](https://download.microsoft.com/download/6/E/D/6ED0E6CF-C06E-4D4E-9F70-C5932795CC12/TRW_S-v1.3.zip)
+* Microsoft Visual Studio 2013+
+
+### Instruction
+
+* Use `Visual Studio` to open `shadow-removal-code-archive\PenumbraRemoval\PenumbraRemoval.sln`, it contains three VC projects, fix the include path and lib path of every projects.(but I think you only need to fix the `PenumbraRemoval\PenumbraRemoval`) Don't forget to fix the .cpp in `PenumbraRemoval\PenumbraRemoval`, it use three .cpp from `TRW-S`.
+
 # Learning to Remove Soft Shadows - code archive
 This repository contains the code for our 2015 ACM Transactions on Graphics paper "[Learning to Remove Soft Shadows](http://visual.cs.ucl.ac.uk/pubs/softshadows/)".
 

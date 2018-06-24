@@ -140,9 +140,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\TRW_S-v1.3\minimize.cpp" />
-    <ClCompile Include="..\..\..\TRW_S-v1.3\MRFEnergy.cpp" />
-    <ClCompile Include="..\..\..\TRW_S-v1.3\treeProbabilities.cpp" />
+    <ClCompile Include="..\..\..\..\Visual Studio 2017\Libraries\Includes\TRW_S-v1.3\minimize.cpp" />
+    <ClCompile Include="..\..\..\..\Visual Studio 2017\Libraries\Includes\TRW_S-v1.3\MRFEnergy.cpp" />
+    <ClCompile Include="..\..\..\..\Visual Studio 2017\Libraries\Includes\TRW_S-v1.3\treeProbabilities.cpp" />
     <ClCompile Include="..\..\RandomForest\src\Ensemble.cpp" />
     <ClCompile Include="..\..\RandomForest\src\NodeR.cpp" />
     <ClCompile Include="..\..\RandomForest\src\RandomForestCommon.cpp" />
