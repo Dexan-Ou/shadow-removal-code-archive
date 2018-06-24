@@ -19,15 +19,16 @@ Then you will need these things to make it work:
 ### Instruction
 
 * Install `Maya`(you can get a student pack if you are still student) and `Mental Ray Plugin`/`Mental Ray for Maya`. Besides, you do not need to install `pyMEL` as it is built-in since `Maya 2013`.
-* Start `Maya`, 
-* Create a empty scene, 
-* Load the `Mental Ray Plugin`(`Mayatomr.mll`), 
+* Start `Maya`.
+* Create a empty scene.
+* Load the `Mental Ray Plugin`(`Mayatomr.mll`).
 * Open the `Render Settings`, change render to `mental ray` and change the output format to `PNG`. Then create `Physical Sun and Sky`.
 * Delete the `sunShape` as we only need `physical sky`.
 * Save the scene as `shadow-gen-master\base_white.mb`.
 * Open the `Script Editor`(I am not using the English version, so it might be incorrect), change to `python` mode, load `shadow-gen-master\create_scene.py`.
 * Change the `__FILE__` to absolutely path of `create_scene.py`, as we will run the code from editor(so there has no `__FILE__`). You might want to change the `n_images`, as it control the size of outputs.
 * Run the code.
+* You will get the outputs in `shadow-gen-master\output`. Copy or move them into `shadow-removal-test\training_images`.
 
 ## Compiling the `PenumbraRemoval`
 
@@ -43,6 +44,14 @@ This part is the key of the whole work. It is a bit plainful to configure the en
 ### Instruction
 
 * Use `Visual Studio` to open `shadow-removal-code-archive\PenumbraRemoval\PenumbraRemoval.sln`, it contains three VC projects, fix the include path and lib path of every projects.(but I think you only need to fix the `PenumbraRemoval\PenumbraRemoval`) Don't forget to fix the .cpp in `PenumbraRemoval\PenumbraRemoval`, it use three .cpp from `TRW-S`.
+*Attention: some include path is useless, you can just ignore them*
+* Compile the project, copy the `PenumbraRemoval.exe` and openCV's dll to `shadow-removal-code-archive\shadow-removal-test\prem`.
+
+# Python Part
+This part is the main part of the work. So it might be a bit complex.
+***not complete, WIP***
+
+below is the original README.
 
 # Learning to Remove Soft Shadows - code archive
 This repository contains the code for our 2015 ACM Transactions on Graphics paper "[Learning to Remove Soft Shadows](http://visual.cs.ucl.ac.uk/pubs/softshadows/)".
