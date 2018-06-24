@@ -1,0 +1,1 @@
+.\Scribbler.exe %1

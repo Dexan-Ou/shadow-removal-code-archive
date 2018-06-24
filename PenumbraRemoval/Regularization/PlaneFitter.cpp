@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-float round(float f) {
+float Nround(float f) {
 	return (f > 0.0) ? floor(f + 0.5f) : ceil(f - 0.5f);
 }
 

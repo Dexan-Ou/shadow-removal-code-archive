@@ -411,7 +411,7 @@ void DataProvider::Align(
       }
     }
   }
-  
+  /*
   // DBG
   imshow("tmplt", tmplt);
   imshow("original", CutOutRotatedRect(image, aligned_patch->rot_rect()));
@@ -424,7 +424,7 @@ void DataProvider::Align(
   imshow("aligned", CutOutRotatedRect(image, aligned_patch->rot_rect()) + aligned_patch->intensity_offset());
   waitKey();
   destroyAllWindows();
-
+  */
   return;
 }
 

@@ -30,15 +30,6 @@
     <ClCompile Include="..\Regularization\RegNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\research\matlab\TRW_S-v1.3\treeProbabilities.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\research\matlab\TRW_S-v1.3\minimize.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\research\matlab\TRW_S-v1.3\MRFEnergy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\Regularization\RegLabel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -64,6 +55,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\DataProvider\Serializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\TRW_S-v1.3\minimize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\TRW_S-v1.3\MRFEnergy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\TRW_S-v1.3\treeProbabilities.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

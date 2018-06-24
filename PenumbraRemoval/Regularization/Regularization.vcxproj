@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -21,29 +21,34 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7861AEC9-DD53-4E04-B66C-9D1AC23F0E3F}</ProjectGuid>
     <RootNamespace>Regularization</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -62,18 +67,18 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\mgryka\Downloads\eigen;C:\OpenCV2.3.1\build\install\include;C:\Work\VS2010\PenumbraRemoval;$(IncludePath);C:\Work\research\matlab\TRW_S-v1.3</IncludePath>
+    <IncludePath>E:\Documents\Visual Studio 2017\Libraries\Includes\Eigen v3.1.1;E:\Documents\Github\shadow-removal-code-archive\PenumbraRemoval;E:\Documents\Visual Studio 2017\Libraries\Includes\TRW_S-v1.3;$(IncludePath)</IncludePath>
     <LibraryPath>C:\OpenCV2.3.1\build\install\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\mgryka\Downloads\eigen;C:\Work\VS2010\PenumbraRemoval;C:\Work\research\matlab\TRW_S-v1.3;$(IncludePath);C:\Work\research\matlab\TRW_S-v1.3</IncludePath>
+    <IncludePath>E:\Documents\Visual Studio 2017\Libraries\Includes\Eigen v3.1.1;E:\Documents\Github\shadow-removal-code-archive\PenumbraRemoval;E:\Documents\Visual Studio 2017\Libraries\Includes\TRW_S-v1.3;$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\mgryka\Downloads\eigen;$(IncludePath);C:\Work\research\matlab\TRW_S-v1.3</IncludePath>
+    <IncludePath>E:\Documents\Visual Studio 2017\Libraries\Includes\Eigen v3.1.1;E:\Documents\Github\shadow-removal-code-archive\PenumbraRemoval;E:\Documents\Visual Studio 2017\Libraries\Includes\TRW_S-v1.3;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\mgryka\Downloads\eigen;C:\Work\VS2010\PenumbraRemoval;$(IncludePath);C:\Work\research\matlab\TRW_S-v1.3</IncludePath>
+    <IncludePath>E:\Documents\Visual Studio 2017\Libraries\Includes\Eigen v3.1.1;E:\Documents\Github\shadow-removal-code-archive\PenumbraRemoval;E:\Documents\Visual Studio 2017\Libraries\Includes\TRW_S-v1.3;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

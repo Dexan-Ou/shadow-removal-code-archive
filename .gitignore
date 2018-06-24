@@ -1,0 +1,16 @@
+*.dll
+*.exe
+*.ilk
+*.lib
+*.pdb
+*.ipdb
+*.iobj
+*.exp
+*.pyd
+*.pyc
+*.jpg
+*.png
+.vs/
+X64/
+!PenumbraRemoval/X64
+shadow-removal-test/prem/color_solver/build/

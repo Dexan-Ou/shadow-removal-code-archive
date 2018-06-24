@@ -112,7 +112,7 @@ int main(int argc, char* argv[]) {
     for (int p = 0; p < n_patches; ++p) {
       // get the target rect and write image to disk
       cv::Rect r = patches[i][p];
-      ImageCv label_cv = DataProvider::getLabelVector(matte_gt_cv, r);
+      ImageCv label_cv = DataProvider::GetLabelVector(matte_gt_cv, r);
       Image label;
       cv::cv2eigen(label_cv, label);
       label.resize(psize, psize);

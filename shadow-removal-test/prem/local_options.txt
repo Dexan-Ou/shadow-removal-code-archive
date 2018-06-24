@@ -1,0 +1,3 @@
+target_path E:\Documents\Github\shadow-removal-test
+test_dir %(target_path)s\test_images
+random_training_subsample 1

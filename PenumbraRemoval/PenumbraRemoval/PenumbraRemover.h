@@ -40,11 +40,11 @@ public:
 	~PenumbraRemover(void);
 
 	cv::Mat Test(
-      const cv::Mat& shad_im,
-	    const cv::Mat& mask_im,
-	    const cv::Mat& gmatte_im,
-	    const cv::Mat& unshad_mask_im,
-      const Options& options,
+		const cv::Mat& shad_im,
+		const cv::Mat& mask_im,
+		const cv::Mat& gmatte_im,
+		const cv::Mat& unshad_mask_im,
+		const Options& options);
 
 	void TrainScale(
       int scale_id,

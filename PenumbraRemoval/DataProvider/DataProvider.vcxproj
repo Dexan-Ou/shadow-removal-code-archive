@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -21,29 +21,34 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E1F233A7-24F8-4B77-913D-29406F76847A}</ProjectGuid>
     <RootNamespace>DataProvider</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -62,19 +67,23 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Work\VS2010\PenumbraRemoval;C:\Users\mgryka\Downloads\eigen;C:\OpenCV2.3.1\build\install\include;C:\Work\VS2010\Clusterer\include;C:\Work\VS2010\RandomForest\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Work\VS2010\Clusterer\include;E:\Documents\Github\shadow-removal-code-archive\PenumbraRemoval;E:\Documents\Visual Studio 2017\Libraries\Includes\Eigen v3.1.1;E:\Documents\Visual Studio 2017\Libraries\opencv2.4.1\build\include;E:\Documents\Github\shadow-removal-code-archive\RandomForest\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LibraryPath>C:\OpenCV2.3.1\build\install\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>E:\Documents\Visual Studio 2017\Libraries\opencv2.4.1\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Work\VS2010\PenumbraRemoval;C:\Users\mgryka\Downloads\eigen;C:\OpenCV2.3.1\build\install\include;C:\Work\VS2010\Clusterer\include;C:\Work\VS2010\RandomForest\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\OpenCV2.3.1\build\install\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Work\VS2010\Clusterer\include;E:\Documents\Github\shadow-removal-code-archive\PenumbraRemoval;E:\Documents\Visual Studio 2017\Libraries\Includes\Eigen v3.1.1;E:\Documents\Visual Studio 2017\Libraries\opencv2.4.1\build\include;E:\Documents\Github\shadow-removal-code-archive\RandomForest\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Documents\Visual Studio 2017\Libraries\opencv2.4.1\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
     <SourcePath>$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\OpenCV2.3.1\build\install\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\OpenCV2.3.1\build\install\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Work\VS2010\Clusterer\include;E:\Documents\Github\shadow-removal-code-archive\PenumbraRemoval;E:\Documents\Visual Studio 2017\Libraries\Includes\Eigen v3.1.1;E:\Documents\Visual Studio 2017\Libraries\opencv2.4.1\build\include;E:\Documents\Github\shadow-removal-code-archive\RandomForest\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Documents\Visual Studio 2017\Libraries\opencv2.4.1\build\x86\vc14\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Work\VS2010\Clusterer\include;E:\Documents\Github\shadow-removal-code-archive\PenumbraRemoval;E:\Documents\Visual Studio 2017\Libraries\Includes\Eigen v3.1.1;E:\Documents\Visual Studio 2017\Libraries\opencv2.4.1\build\include;E:\Documents\Github\shadow-removal-code-archive\RandomForest\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Documents\Visual Studio 2017\Libraries\opencv2.4.1\build\x86\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

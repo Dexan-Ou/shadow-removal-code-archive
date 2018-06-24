@@ -6,6 +6,7 @@
 #include <deque>
 #include <iostream>
 #include <fstream>
+#include <map>
 
 #include <Eigen/Core>
 #include <Eigen/Dense>
